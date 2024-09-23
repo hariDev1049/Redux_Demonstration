@@ -3,17 +3,17 @@ name: Simple Test Workflow
 on:
   push:
     branches:
-      - main  # Triggers the workflow on push to the 'main' branch
+      - master # Triggers the workflow on push to the 'main' branch
 
 jobs:
   test-job:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout the repository
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    # Step 2: Run a Hello World script
-    - name: Print Hello World
-      run: echo "Hello World"
+      # Step 2: Run a Hello World script
+      - name: Print Hello World
+        run: echo "Hello World"
